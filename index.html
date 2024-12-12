@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div class="image_container">
+          <img class="d-inline-block align-text-top" src="movie-cover.webp" alt="Movies cover">
+          <div class="image_text ">Movies Watch List
+            <span class="image_title">Find your Film</span>
+            <h1><a href="watchlist.html" class="btn-primary btn-sm">My Watchlist</a></h1>
+          </div>
+      </div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <div class="input-group" style="width: 80%; padding: 5px;">
+            <input type="search"
+            placeholder="Search by movie title"
+            id="titleSearch"
+            class="form-control">
+            <button class="btn btn-light" type="submit" id="searchButton">
+              <i class="fas fa-search"></i>
+              Search
+            </button>
+          </div>
+        </nav>
+    </header>
+
+    <!--
+    Main section of the page, displays movies and a "start exploring" message
+    if no movies are found.
+    -->
+    <main>
+      <section class="movies-container px-3">
+      <div>
+      <div id="movies-list">
+        <h2 class="start-exploring"><i class="fa fa-film" aria-hidden="true"></i> Start Exploring</h2>
+        <!-- movies go here -->
+      </div>
+    </div>
+      </section>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>Movie Watchlist Project by <a href="https://codeflow-studios.netlify.app/" class="text-white">@CodeFlow</a>, <a href="https://github.com/CjLogic" class="text-white"><img src="github-mark-white.png" alt="Github Logo" class="github-logo"> My Github</a>.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <!--
+    Container for toast notifications
+    Uses Bootstrap's position-fixed utility class to place the container
+    at the bottom right of the screen
+    p-3 adds some padding to the container
+  -->
+  <div class="position-fixed bottom-0 end-0 p-3" id="toast-container"></div>
+    </body>
+
+  </html>

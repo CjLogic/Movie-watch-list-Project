@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Watchlist</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div class="image_container">
+          <img class="d-inline-block align-text-top" src="movie-cover.webp" alt="Movies cover">
+          <div class="image_text ">Movies Watch List
+            <span class="image_title">My Watchlist</span>
+            <h1><a href="index.html" class="btn-success btn-sm">Search For Movies</a></h1>
+          </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="movies-container px-3">
+      <div>
+      <div id="movies-list" class="watchlist-movies">
+        <!-- <h2 class="start-exploring">Your Watchlist is looking a little empty...<i class="fa fa-plus-circle text_button" aria-hidden="true"><a href="index.html" class="text_button2"> Let's add some movies!</a></i></h2> -->
+        <!-- Watchlist movies go here -->
+      </div>
+    </div>
+      </section>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>Movie Watchlist Project by <a href="https://www.linkedin.com/in/christian-ramirez-009b6932b/" class="text-white">@CjLogix</a>, <a href="https://github.com/CjLogic" class="text-white"><img src="github-mark-white.png" alt="Github Logo" class="github-logo"> My Github</a>.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <div class="position-fixed bottom-0 end-0 p-3" id="toast-container"></div>
+    </body>
+
+  </html>
